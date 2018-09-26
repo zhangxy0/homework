@@ -8,7 +8,7 @@ title: 双鸭山大学的来源
 ## 1、中山大学
 中山大学，简称“中大”，由孙中山先生创办，是一所有着百年悠久历史的老校。它秉承着“德才兼备，家国情怀，领袖气质”的人才培养目标，走出了一批又一批的国家栋梁。
 
-![image](https://github.com/zhangxy0/zxy-homework/blob/gh-pages/images/b3119313b07eca8032bb094b9a2397dda04483db.png)
+![image](https://github.com/zhangxy0/zxy-homework/blob/gh-pages/images/b3119313b07eca8032bb094b9a2397dda04483db.jpg)
 ## 2、双鸭山大学的来源
 “Sun Yat-sen”是孙中山先生的英文名字，因此中山大学的英文校名正是“Sun Yat-sen University”，而该英文名字的汉语音译与双鸭山谐音，双鸭山大学的名字由此而来。
 
