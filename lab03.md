@@ -2,7 +2,7 @@
 
 ## 影片简介
    《黑客帝国》是由华纳兄弟公司发行的系列动作片，影片讲述了一名年轻的网络黑客尼奥发现看似正常的现实世界实际上是由一个名为“矩阵”的计算机人工智能系统控制的，尼奥在一名神秘女郎崔妮蒂的引导下见到了黑客组织的首领墨菲斯，三人走上了抗争矩阵征途的故事。
-   ![](images/083657.80550183.jpg)
+   ![image](http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=154129065,626876730&os=2865467433,675237734&simid=3511544766,355375019&pn=1&rn=1&di=47976684580&ln=1864&fr=&fmq=1539190041411_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fimg2.selfimg.com.cn%2Fuedgqcms%2F2016%2F01%2F07%2F1452170873_BKMHLl.jpg&rpstart=0&rpnum=0&adpicid=0)
    
 ## 推荐原因  
    这个系列一共有三部电影，或许看过一遍之后，大家大多只是被精彩的特效吸引了目光，然而，仔细品味，我们就会发现电影中隐藏着更深的含义。在我看来，《黑客帝国》讲述了一个追寻真实与自我的故事，“什么是真实？”莫菲斯的话给我印象最深。千百年来人们都在追寻着答案。《黑客帝国》借助电脑这一高科技来重新诠释了这一千古迷题，也许每个人都曾思考过---我是睡着还是醒着？世界是不是真的？  
