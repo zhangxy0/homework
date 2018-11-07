@@ -10,3 +10,16 @@
 ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/h4AvEyw2Pf2uGuGSbZGptmAah3H64hrCjCGCwRBLoKk!/b/dDYBAAAAAAAA&bo=oABoAAAAAAACF*s!&rf=viewer_4)  
 
 ## 游戏设计
+这是一个非常简单易懂的小游戏，其中涉及到的人物及其之间的关系也十分的简单。  
+Object:子弹
+Attribute:图片,位置
+Collaborator：精灵 Events & Actions：碰撞 & 销毁自己  
++---------------------------------+  
+| Object Name                     |  
++---------------------------------+
+| Attributes                      |
++--------------+------------------+
+| Collaborator | Events & Actions |
++--------------+------------------+
+|              |                  |
++--------------+------------------+
