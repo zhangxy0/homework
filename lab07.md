@@ -11,15 +11,12 @@
 
 ## 游戏设计
 这是一个非常简单易懂的小游戏，其中涉及到的人物及其之间的关系也十分的简单。  
-Object:子弹
-Attribute:图片,位置
-Collaborator：精灵 Events & Actions：碰撞 & 销毁自己  
-+---------------------------------+    
-| Object Name                     |    
-+---------------------------------+  
-| Attributes                      |  
-+--------------+------------------+  
-| Collaborator | Events & Actions |  
-+--------------+------------------+  
-|              |                  |  
-+--------------+------------------+
+1) Object:炮台  
+   Attribute:图片,位置 
+   Collaborator：子弹 Events & Actions：发射子弹    
+2) Object:子弹  
+   Attribute:图片,位置  
+   Collaborator：下落物 Events & Actions：碰撞 & 销毁自己   
+3) Object:下落物  
+   Attribute:图片,位置  
+   Collaborator：子弹 Events & Actions：碰撞 & 销毁自己
