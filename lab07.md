@@ -12,7 +12,7 @@
 ## 游戏设计
 这是一个非常简单易懂的小游戏，其中涉及到的人物及其之间的关系也十分的简单。  
 1) Object:炮台  
-   Attribute:图片,位置 
+   Attribute:图片,位置   
    Collaborator：子弹 Events & Actions：发射子弹    
 2) Object:子弹  
    Attribute:图片,位置  
