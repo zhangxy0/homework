@@ -1,4 +1,12 @@
-# 
-![images](http://user.qzone.qq.com/3236363783/photo/V10JZWde3GxqHO)
-![image](https://h5.qzone.qq.com/page/photo?init=photo.v7/common/viewer2/index&picKey=NDR0B*7mwCgC41uyPbUJNgEAAAAAAAA!&ownerUin=3236363783&appid=4&topicId=V10JZWde3GxqHO_NDR0B*7mwCgC41uyPbUJNgEAAAAAAAA!_0_0&pre=http%3A%2F%2Fa3.qpic.cn%2Fpsb%3F%2FV10JZWde3GxqHO%2Fh4AvEyw2Pf2uGuGSbZGptmAah3H64hrCjCGCwRBLoKk!%2Fm%2FdDYBAAAAAAAA%26ek%3D1%26kp%3D1%26pt%3D0%26bo%3DoABoAAAAAAACF*s!%26tl%3D1%26vuin%3D3236363783%26tm%3D1541602800%26sce%3D60-3-3%26rf%3D0-0&useqzfl=1&useinterface=1&noCloseBtn=0&inqq=1)
-![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/h4AvEyw2Pf2uGuGSbZGptmAah3H64hrCjCGCwRBLoKk!/b/dDYBAAAAAAAA&bo=oABoAAAAAAACF*s!&rf=viewer_4)
+# HTML5游戏设计与制作
+## 游戏策划
+内容介绍：操控炮台发射子弹击毁下落物。    
+玩法介绍：通过键盘的左右键控制炮台的移动，通过空格键控制子弹的发射，若是被下落物击中或错过的下落物超过三个则游戏失败。  
+人设：
+1.炮台：可左右移动，可发射子弹。  
+2.子弹：想要击毁下落物体的必备物。  
+3.下落物：决定游戏是否继续的关键，若是炮台被下落物击中或错过的下落物超过三个则游戏失败，否则游戏继续。    
+
+![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/h4AvEyw2Pf2uGuGSbZGptmAah3H64hrCjCGCwRBLoKk!/b/dDYBAAAAAAAA&bo=oABoAAAAAAACF*s!&rf=viewer_4)  
+
+## 游戏设计
