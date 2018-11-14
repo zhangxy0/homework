@@ -18,5 +18,6 @@
    Attribute:图片,位置  
    Collaborator：下落物 Events & Actions：碰撞 & 销毁自己   
 3) Object:下落物  
-   Attribute:图片,位置  
+   Attribute:  
+   ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/tt2ErbYi4mbDapOogkq7dkuUlxHpJKiZ339wOTmb3vA!/b/dDYBAAAAAAAA&bo=.gD6AAAAAAADFzI!&rf=viewer_4)
    Collaborator：子弹 Events & Actions：碰撞 & 销毁自己
