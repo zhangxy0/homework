@@ -12,12 +12,17 @@
 ## 游戏设计
 这是一个非常简单易懂的小游戏，其中涉及到的人物及其之间的关系也十分的简单。  
 1) Object:炮台  
-   Attribute:图片,位置   
+   Attribute:  
+   ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/*ClyrXzJ6phQWk0UeT17LGaqR.0yyZOOjcgefQ*r3Y0!/b/dFMBAAAAAAAA&bo=.gD6AAAAAAADFzI!&rf=viewer_4)
+     
    Collaborator：子弹 Events & Actions：发射子弹    
 2) Object:子弹  
-   Attribute:图片,位置  
+   Attribute:   
+   ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/0SR.899Nvo27XwQVe06.M0F*LJUoxcGlDpbhQuLNteU!/b/dFQBAAAAAAAA&bo=.gD6AAAAAAADFzI!&rf=viewer_4)
+     
    Collaborator：下落物 Events & Actions：碰撞 & 销毁自己   
 3) Object:下落物  
    Attribute:  
-   ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/tt2ErbYi4mbDapOogkq7dkuUlxHpJKiZ339wOTmb3vA!/b/dDYBAAAAAAAA&bo=.gD6AAAAAAADFzI!&rf=viewer_4)
+   ![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/tt2ErbYi4mbDapOogkq7dkuUlxHpJKiZ339wOTmb3vA!/b/dDYBAAAAAAAA&bo=.gD6AAAAAAADFzI!&rf=viewer_4)  
+   
    Collaborator：子弹 Events & Actions：碰撞 & 销毁自己
