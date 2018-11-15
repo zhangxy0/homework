@@ -1,14 +1,14 @@
 # 硬件编程–机器指令编程实验
-    姓名：张心悦
-    学号：18342128
 ## 实验目标
 1.理解冯·诺伊曼计算机的结构  
 2.理解机器指令   
 3.用汇编编写简单程序   
 
 ## 实验步骤与结果 
-### 一.任务1  
+### 任务1  
 #### 点step after step。观察并回答下面问题：  
+![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/aRhGtAQrg5SJF*EdV07fqUtmqT4N2XiTWkoR.B.ftLA!/m/dDUBAAAAAAAAnull&bo=MgP3AQAAAAADB.U!&rf=photolist&t=5)      
+
 ##### PC，IR 寄存器的作用。  
 PC: PC是专门用于在CPU取指令期间寻址程序存储器。PC总是保存着下一条要执行的指令的16位地址。   
 IR:  
@@ -22,22 +22,85 @@ IR:
 作用:主要用于完成数据的算术和逻辑运算，可以存放数据或中间结果。    
 
 ##### 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。  
-PC 根据地址从RAM取出指令LOD #3 
-指令传入IR，指令传入Decoder，无需取址，数字3传入MUX 
-数字3传入ALU之后传入ACC
+1)PC 根据地址从RAM取出指令LOD #3   
+2)指令传入IR，指令传入Decoder，无需取址，数字3传入MUX   
+3)数字3传入ALU之后传入ACC  
 
-##### 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。  
-##### “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。  
+##### 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。
+1)PC根据地址从RAM取出指令ADD W   
+2)指令传入IR之后传入Decoder   
+3)ALU从ACC中取值   
+4)IR再次访问RAM中的W，从W中取值   
+5)W的值读入ALU   
+6)ALU执行加法，结果传入ACC   
   
-2.点击“Binary”,观察回答下面问题  
-1）写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。
-2）解释 RAM 的地址。
-3）该机器CPU是几位的？（按累加器的位数）
-4）写出该程序对应的 C语言表达。  
+##### “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。  
+LOD #3只需访问RAM一次,而ADD W需要两次访问RAM   
+
+#### 点击“Binary”,观察回答下面问题
+![images](http://a4.qpic.cn/psb?/V10JZWde3GxqHO/VOvtx3nI0rrroo03ASxwyUImsNvfwRgMWlpWP6gu0tk!/m/dDcBAAAAAAAAnull&bo=CwPyAQAAAAADB9k!&rf=photolist&t=5)      
+
+##### 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。
+00010100 00000111   
+一个为步骤,另一个为操作数  
+
+##### 解释 RAM 的地址。
+只用于暂时存放程序和数据，一旦关闭电源或发生断电，其中的程序和数据就会丢失   
+
+##### 该机器CPU是几位的？（按累加器的位数）
+16位  
+
+##### 写出该程序对应的 C语言表达。  
+int w = 3;  
+int x = 7;  
+int z = x + w;   
+
+### 任务2
+![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/xp7*vp1qcfD8p4vVI2n75.pkglDjzGU6W*wOC2Qp7j4!/m/dDUBAAAAAAAAnull&bo=FQPyAQAAAAADB8c!&rf=photolist&t=5)  
+
+#### 输入程序Program 2，运行并回答问题：
+##### 用一句话总结程序的功能
+使 x 从 10 不断减一,直到 x < 0.   
+
+##### 写出对应的 c 语言程序
+int x = 10;   
+while (x >= 0){   
+–x;   
+}   
+
+#### 修改该程序，用机器语言实现 10+9+8+..1 ，输出结果存放于内存 Y
+##### 写出 c 语言的计算过程
+int x = 10;   
+int w = 0;   
+while(x > 0){   
+w += x;   
+--x;   
+}   
+int y = w;     
+
+##### 写出机器语言的计算过程
+0000000 00010100 00001010   
+0000010 00000101 10000001   
+0000100 00010001 00000001   
+0000110 00000101 10000000   
+0001000 00000000 10000001   
+0001010 00000101 10000000   
+0001100 00000100 10000000   
+0001110 00001101 00010010   
+0010000 00001100 00000100   
+0010010 00000101 10000010   
+0010100 00001111 00000000   
+0010110 00001110 00000000   
+1000000 00000000   
+1000001 00000000   
+1000010 00000000    
+
+##### 用自己的语言，简单总结高级语言与机器语言的区别与联系。
+联系:高级语言经编译可变为机械语言,都可以实现顺序，选择和循环     
+区别：高级语言更接近人类语言,是给人看的 ; 机器语言是纯粹的二进制数据,是给机器看的。  
 
 ![images](http://a1.qpic.cn/psb?/V10JZWde3GxqHO/tnpOsfnNDsBFTx2nRl.f065D4or88POxkIml1zlUr4I!/m/dFQBAAAAAAAAnull&bo=IgP4AQAAAAADB*o!&rf=photolist&t=5)
 ## 实验小结
-通过亲手进行的实验操作，我深刻的理解了冯·诺伊曼计算机的结构   
-![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/aRhGtAQrg5SJF*EdV07fqUtmqT4N2XiTWkoR.B.ftLA!/m/dDUBAAAAAAAAnull&bo=MgP3AQAAAAADB.U!&rf=photolist&t=5)    
-![images](http://a4.qpic.cn/psb?/V10JZWde3GxqHO/VOvtx3nI0rrroo03ASxwyUImsNvfwRgMWlpWP6gu0tk!/m/dDcBAAAAAAAAnull&bo=CwPyAQAAAAADB9k!&rf=photolist&t=5)    
-![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/xp7*vp1qcfD8p4vVI2n75.pkglDjzGU6W*wOC2Qp7j4!/m/dDUBAAAAAAAAnull&bo=FQPyAQAAAAADB8c!&rf=photolist&t=5)
+通过亲手进行的实验操作，我深刻的理解了冯·诺伊曼计算机的结构以及汇编语言的有关知识   
+
+
