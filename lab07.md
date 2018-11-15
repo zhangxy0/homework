@@ -99,7 +99,6 @@ int y = w;
 联系:高级语言经编译可变为机械语言,都可以实现顺序，选择和循环     
 区别：高级语言更接近人类语言,是给人看的 ; 机器语言是纯粹的二进制数据,是给机器看的。  
 
-![images](http://a1.qpic.cn/psb?/V10JZWde3GxqHO/tnpOsfnNDsBFTx2nRl.f065D4or88POxkIml1zlUr4I!/m/dFQBAAAAAAAAnull&bo=IgP4AQAAAAADB*o!&rf=photolist&t=5)
 ## 实验小结
 通过亲手进行的实验操作，我深刻的理解了冯·诺伊曼计算机的结构以及汇编语言的有关知识   
 
