@@ -33,10 +33,11 @@ PC 根据地址从RAM取出指令LOD #3
 1）写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。
 2）解释 RAM 的地址。
 3）该机器CPU是几位的？（按累加器的位数）
-4）写出该程序对应的 C语言表达。
+4）写出该程序对应的 C语言表达。  
+
 ![images](http://a1.qpic.cn/psb?/V10JZWde3GxqHO/tnpOsfnNDsBFTx2nRl.f065D4or88POxkIml1zlUr4I!/m/dFQBAAAAAAAAnull&bo=IgP4AQAAAAADB*o!&rf=photolist&t=5)
 ## 实验小结
-通过亲手进行的实验操作，我深刻的理解了冯·诺伊曼计算机的结构 
-![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/aRhGtAQrg5SJF*EdV07fqUtmqT4N2XiTWkoR.B.ftLA!/m/dDUBAAAAAAAAnull&bo=MgP3AQAAAAADB.U!&rf=photolist&t=5)  
-![images](http://a4.qpic.cn/psb?/V10JZWde3GxqHO/VOvtx3nI0rrroo03ASxwyUImsNvfwRgMWlpWP6gu0tk!/m/dDcBAAAAAAAAnull&bo=CwPyAQAAAAADB9k!&rf=photolist&t=5)  
+通过亲手进行的实验操作，我深刻的理解了冯·诺伊曼计算机的结构   
+![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/aRhGtAQrg5SJF*EdV07fqUtmqT4N2XiTWkoR.B.ftLA!/m/dDUBAAAAAAAAnull&bo=MgP3AQAAAAADB.U!&rf=photolist&t=5)    
+![images](http://a4.qpic.cn/psb?/V10JZWde3GxqHO/VOvtx3nI0rrroo03ASxwyUImsNvfwRgMWlpWP6gu0tk!/m/dDcBAAAAAAAAnull&bo=CwPyAQAAAAADB9k!&rf=photolist&t=5)    
 ![images](http://a2.qpic.cn/psb?/V10JZWde3GxqHO/xp7*vp1qcfD8p4vVI2n75.pkglDjzGU6W*wOC2Qp7j4!/m/dDUBAAAAAAAAnull&bo=FQPyAQAAAAADB8c!&rf=photolist&t=5)
