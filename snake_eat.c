@@ -103,100 +103,28 @@ int main() {
     return 0;
 }
 
-void move(int a, int b){
-    int i;
-    if (a == 1 && b == 0)
-    {
-        clear();//清空map
-        last_X = snake_x[length - 1];
-        last_Y = snake_y[length - 1];//记录当前蛇尾坐标
-        for (i = length - 1; i >= 1; i--)
+void snakefood(void){
+    srand(time(NULL));
+
+    if (food == 0)
+    {   
+        x = rand() % 10 + 1;
+        y = rand() % 10 + 1;
+        if (map[x][y] == ' ')//确保在空白位置出现食物
         {
-            snake_x[i] = snake_x[i - 1];
-            snake_y[i] = snake_y[i - 1];//移动
+            map[x][y] = SNAKE_FOOD;//在地图可到达位置上随机生成食物
+            food++;//确保每次只出现一个食物
         }
-        snake_x[0]--;//蛇头移动
-        eatfood();//判断是否吃了食物
-        output();//移动完成
-    }
-    if (a == 0 && b == 1)
-    {
-        clear();
-        last_X = snake_x[length - 1];
-        last_Y = snake_y[length - 1];
-        for (i = length - 1; i >= 1; i--)
-        {
-            snake_x[i] = snake_x[i - 1];
-            snake_y[i] = snake_y[i - 1];
-        }
-        snake_x[0]++;
-        eatfood();
-        output();
-    }
-    if (a == -1 && b == 0)
-    {
-        clear();
-        last_X = snake_x[length - 1];
-        last_Y = snake_y[length - 1];
-        for (i = length - 1; i >= 1; i--)
-        {
-            snake_x[i] = snake_x[i - 1];
-            snake_y[i] = snake_y[i - 1];
-        }
-        snake_y[0]++;
-        eatfood();
-        output();
-    }
-    if (a == 0 && b == -1)
-    {
-        clear();
-        last_X = snake_x[length - 1];
-        last_Y = snake_y[length - 1];
-        for (i = length - 1; i >= 1; i--)
-        {
-            snake_x[i] = snake_x[i - 1];
-            snake_y[i] = snake_y[i - 1];
-        }
-        snake_y[0]--;
-        eatfood();
-        output();
-    }
 
+    }
 }
 
-void clear(void){
-    int i;
-    for (i = 0; i < length; i++)
-        map[snake_y[i]][snake_x[i]] = BLANK_CELL;//将蛇原来位置清空
-}
-
-void output(void){
-    int i;
-    map[snake_y[0]][snake_x[0]] = SNAKE_HEAD;
-    for (i = 1; i < length; i++)
-        map[snake_y[i]][snake_x[i]] = SNAKE_BODY;//蛇移动后的位置
-
-}
-
-void printmap(void){
-    int i;
-    for (i = 0; i < 12; i++)
+void eatfood(void){
+    if (snake_y[0] == x && snake_x[0] == y)//判断蛇是否吃到食物
     {
-        printf("%s\n", map[i]);
+        length++;
+        food = 0;//食物已经被吃掉，清空
+        snake_x[length - 1] = last_X;
+        snake_y[length - 1] = last_Y;//蛇长增加一个
     }
-    //蛇可以完成移动，并打印
-}
-
-int gameover(void){
-    int i;
-    int fail = 0;
-    for (i = 1; i<length; i++)//用来判断是否头碰身子
-    {
-        if (snake_x[0] == snake_x[i] && snake_y[0] == snake_y[i])
-            fail = 1;
-    }
-    if (snake_x[0]>10 || snake_y[0] > 10 || snake_x[0] < 1 || snake_y[0] < 1 || fail == 1)//前四个条件为是否触碰边界，后一个条件判断是否头碰身子
-        return 1;
-    else
-        return 0;
-}
+} 
