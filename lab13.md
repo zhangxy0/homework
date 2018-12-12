@@ -5,7 +5,8 @@
 ## 程序结构
 程序主体结构大致如下
 		
-  输出字符矩阵
+		
+	输出字符矩阵
 	WHILE not 游戏结束 DO
 		ch＝等待输入
 		CASE ch DO
@@ -18,4 +19,4 @@
 	END WHILE
 	输出 Game Over!!! 
   
- 因此，我们需要完成的就是对这一段伪代码的填充，包括函数头部的定义，具体函数的实现等等。具体程序见snake eat.c（）以及snake move.c()
+ 因此，我们需要完成的就是对这一段伪代码的填充，包括函数头部的定义，具体函数的实现等等。具体程序见snake_eat.c(https://github.com/zhangxy0/zxy-homework/blob/gh-pages/snake_eat.c)以及snake_move.c(https://github.com/zhangxy0/zxy-homework/blob/gh-pages/snake_move.c)
