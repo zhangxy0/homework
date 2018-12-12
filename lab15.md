@@ -33,4 +33,4 @@
     }
 
 接着，我们需要完成的工作就是依据“自顶向下，逐步求精”的方法完善这一框架以及伪代码，然而由于我实在是初学C语言，独立完成这一任务有些困难（bug太多了）。不过我希望通过学习，我可以早日独立完成这一任务。
-![images]()
+![images](http://m.qpic.cn/psb?/V10JZWde3GxqHO/RQ.qObrSXO9rJiSajB01vkyvLk3pT4Q1i9dX0wi3qUs!/b/dLgAAAAAAAAA&bo=KwErAQAAAAACR2M!&rf=viewer_4)
